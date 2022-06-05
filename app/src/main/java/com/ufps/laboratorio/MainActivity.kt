@@ -6,7 +6,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
 
 class MainActivity : AppCompatActivity() {
     var gso: GoogleSignInOptions? = null
@@ -19,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         gso =
             GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
         gsc = GoogleSignIn.getClient(this, gso!!)
-       // googlebtn.setOnClickListener(View.OnClickListener { signIn() })
+        googlebtn.setOnClickListener(View.OnClickListener { signIn() })
     }
 
     fun signIn() {
@@ -43,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     fun navigateToSecondActivity() {
         finish()
-        //val intent = Intent(this@MainActivity, SecondActivity::class.java)
+        val intent = Intent(this@MainActivity, SecondActivity::class.java)
         startActivity(intent)
     }
 }
