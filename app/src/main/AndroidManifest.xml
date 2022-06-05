@@ -14,8 +14,8 @@
         android:theme="@style/Theme.Laboratorio"
         tools:targetApi="31">
         <activity
-            android:name=".InicioActivity"
-            android:exported="false" />
+            android:name=".vista.InicioActivity"
+            android:exported="true" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
