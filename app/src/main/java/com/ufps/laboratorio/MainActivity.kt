@@ -10,6 +10,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.ufps.laboratorio.vista.InicioActivity
 
 class MainActivity : AppCompatActivity() {
     var gso: GoogleSignInOptions? = null
@@ -19,8 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         googlebtn = findViewById(R.id.googleButton)
-        gso =
-            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
+        gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
         gsc = GoogleSignIn.getClient(this, gso!!)
         googlebtn.setOnClickListener(View.OnClickListener { signIn() })
     }
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     fun navigateToSecondActivity() {
         finish()
-        val intent = Intent(this@MainActivity, SecondActivity::class.java)
+        val intent = Intent(this@MainActivity, InicioActivity::class.java)
         startActivity(intent)
     }
 }

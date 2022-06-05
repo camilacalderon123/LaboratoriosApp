@@ -41,7 +41,8 @@
         android:textColor="@android:color/white"
         app:backgroundTint="#F84848"
         app:cornerRadius="15dp"
-        app:icon="@drawable/googleg_disabled_color_18" />
+        app:icon="@drawable/googleg_disabled_color_18"
+        app:iconTint="@color/secondaryTextColor" />
 
 
 </RelativeLayout>
