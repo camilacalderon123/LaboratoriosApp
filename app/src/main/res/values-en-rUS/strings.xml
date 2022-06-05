@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Laboratorio</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="text_noticias">Noticias</string>
     <string name="text_cursos">Cursos</string>
     <string name="text_Miperfil">Mi perfil</string>
@@ -8,8 +8,5 @@
     <string name="txt_tituloNoticia">Nuevo curso de impresión 3D</string>
     <string name="txt_descipcionNoticia">Curso de impresión 3D disponible a partir del viernes 10 de junio en el horario de 2:00 - 3:00 pm viernes y sabados</string>
     <string name="action_inscribirme">Inscribirme</string>
-    <string name="action_verDetalles">Ver detalles</string>
     <string name="txt_descripcionNoticia1">Profesor: Pepito Perez</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
