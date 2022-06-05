@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <ImageView
@@ -24,7 +26,21 @@
     <ImageView
         android:id="@+id/Img3"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:layout_marginTop="250dp"
         android:src="@drawable/logo_de_ufps" />
+
+    <Button
+        android:id="@+id/googleButton"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="430dp"
+        android:text="Iniciar sesión con google"
+        app:backgroundTint="#F84848"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/googleg_disabled_color_18" />
+
+
 </RelativeLayout>
