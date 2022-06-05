@@ -35,7 +35,13 @@
 </com.google.android.material.tabs.TabLayout>
 
     <include layout="@layout/cardview" />
-    <include layout="@layout/cardview" />
 
+    <Button
+        android:id="@+id/sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mesg_botoninicio"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        />
 
 </LinearLayout>

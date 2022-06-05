@@ -9,4 +9,5 @@
     <string name="txt_descipcionNoticia">Curso de impresión 3D disponible a partir del viernes 10 de junio en el horario de 2:00 - 3:00 pm viernes y sabados</string>
     <string name="action_inscribirme">Inscribirme</string>
     <string name="txt_descripcionNoticia1">Profesor: Pepito Perez</string>
+    <string name="mesg_botoninicio">Cerrar sesión</string>
 </resources>
