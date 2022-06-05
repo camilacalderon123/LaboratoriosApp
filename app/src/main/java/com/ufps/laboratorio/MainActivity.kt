@@ -14,7 +14,7 @@ import com.google.android.gms.common.api.ApiException
 class MainActivity : AppCompatActivity() {
     var gso: GoogleSignInOptions? = null
     var gsc: GoogleSignInClient? = null
-    var googlebtn: Button? = null
+    lateinit var googlebtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
