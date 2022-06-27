@@ -17,9 +17,8 @@ class InicioActivity : AppCompatActivity() {
     var gso: GoogleSignInOptions? = null
     var gsc: GoogleSignInClient? = null
     lateinit var signOutBtn: Button
-
-    lateinit var tab: TabLayout
     lateinit var contenedor: ViewPager
+    lateinit var tab:TabLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +36,28 @@ class InicioActivity : AppCompatActivity() {
 
         signOutBtn.setOnClickListener(View.OnClickListener {
             cerrarSesion()
+        })
+
+        //inicializamos las variables
+        tab = findViewById(R.id.tab)
+        contenedor = findViewById(R.id.contenedor)
+        tab.tabGravity = TabLayout.GRAVITY_FILL
+        val adapter = MyAdapter(this, supportFragmentManager,tab.tabCount)
+        contenedor.adapter = adapter
+        contenedor.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab))
+        tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                contenedor.currentItem = tab!!.position
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+
+            }
+
         })
     }
 
