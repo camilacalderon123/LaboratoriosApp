@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -16,7 +17,12 @@ import com.ufps.laboratorio.R
 class InicioActivity : AppCompatActivity() {
     var gso: GoogleSignInOptions? = null
     var gsc: GoogleSignInClient? = null
-    lateinit var signOutBtn: Button
+
+     var nombre: TextView? = null
+     var correo: TextView? = null
+     var cerrarSesionB: Button? = null
+
+
     lateinit var contenedor: ViewPager
     lateinit var tab:TabLayout
 
@@ -24,17 +30,20 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-        signOutBtn = findViewById(R.id.sesion)
+
         gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
         gsc = GoogleSignIn.getClient(this, gso!!)
 
         val acct = GoogleSignIn.getLastSignedInAccount(this)
         if (acct != null) {
             val nombrePersona = acct.displayName
-            val emailPersona = acct.email
+            val correoPersona = acct.email
+            nombre?.setText(nombrePersona)
+            correo?.setText(correoPersona)
+
         }
 
-        signOutBtn.setOnClickListener(View.OnClickListener {
+        cerrarSesionB?.setOnClickListener(View.OnClickListener {
             cerrarSesion()
         })
 

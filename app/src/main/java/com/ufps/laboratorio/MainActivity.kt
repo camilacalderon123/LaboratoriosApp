@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             try {
                 task.getResult(ApiException::class.java)
             } catch (e: ApiException) {
-                Toast.makeText(applicationContext, "Algo no está sirviendo", Toast.LENGTH_SHORT)
+                Toast.makeText(applicationContext, "Inicio sesión...", Toast.LENGTH_SHORT)
                     .show()
             }
         }
