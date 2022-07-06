@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.ufps.laboratorio.fragments.CursosFragment
+import com.ufps.laboratorio.fragments.EquipotFragment
 import com.ufps.laboratorio.fragments.MiperfilFragment
 import com.ufps.laboratorio.fragments.NoticiasFragment
 
@@ -22,7 +22,7 @@ class MyAdapter(
                 NoticiasFragment()
             }
             1 -> {
-                CursosFragment()
+                EquipotFragment()
             }
             2 -> {
                 MiperfilFragment()

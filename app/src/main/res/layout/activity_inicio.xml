@@ -22,7 +22,7 @@
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_cursos"
+        android:text="@string/text_equipot"
         android:id="@+id/cursos"
         />
 

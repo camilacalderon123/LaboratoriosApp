@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Laboratorio</string>
     <string name="text_noticias">Noticias</string>
-    <string name="text_cursos">Cursos</string>
+    <string name="text_equipot">Equipo de trabajo</string>
     <string name="text_Miperfil">Mi perfil</string>
     <string name="txt_noticia0">Nuevo curso de impresión 3D</string>
     <string name="txt_tituloNoticia">Nuevo curso de impresión 3D</string>
