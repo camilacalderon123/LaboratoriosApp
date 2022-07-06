@@ -4,9 +4,9 @@
     <string name="text_noticias">Noticias</string>
     <string name="text_equipot">Equipo de trabajo</string>
     <string name="text_Miperfil">Mi perfil</string>
-    <string name="txt_noticia0">Nuevo curso de impresión 3D</string>
+    <string name="txt_noticia0">Matias Herrera Caceres</string>
     <string name="txt_tituloNoticia">Nuevo curso de impresión 3D</string>
-    <string name="txt_descipcionNoticia">Curso de impresión 3D disponible a partir del viernes 10 de junio en el horario de 2:00 - 3:00 pm viernes y sabados</string>
+    <string name="txt_descipcionNoticia">Correo: matiashc@ufps.edu.co</string>
     <string name="action_inscribirme">Inscribirme</string>
     <string name="action_verDetalles">Ver detalles</string>
     <string name="txt_descripcionNoticia1">Profesor: Pepito Perez</string>
@@ -17,6 +17,11 @@
     <string name="nombre">nombre</string>
     <string name="correo">correo</string>
     <string name="Cerrarsesión">Cerrar Sesión</string>
+    <string name="txt_tituloEquipo0">Matias Herrera Caceres</string>
+    <string name="txt_tituloEquipo1">Zaira Gonzalez Rodríguez</string>
+    <string name="txt_correo1">proyectosfablab@ufps.edu.co</string>
+    <string name="txt_tituloEquipo2">Nancy Marcela Alvarez Garnica</string>
+    <string name="txt_correo2">mentortecnicofablab@ufps.edu.co</string>
 
 
 </resources>

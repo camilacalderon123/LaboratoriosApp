@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/card2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/imagenNoticia0"
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:contentDescription="@string/txt_noticia0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/matias" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tituloEquipo0"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:id="@+id/equipot0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_descipcionNoticia"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@+id/correo0"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Segundo -->
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/imagenEquipot"
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:contentDescription="@string/txt_noticia0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/se_ora_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tituloEquipo1"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:id="@+id/tituloNoticia"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_correo1"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@+id/descripcionNoticia1"
+                />
+
+        </LinearLayout>
+
+        <!-- Tercero -->
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/imagenEquipot1"
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:contentDescription="@string/txt_noticia0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/se_ora_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_tituloEquipo2"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:id="@+id/tituloNoticia1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_correo2"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@+id/descripcionNoticia"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
